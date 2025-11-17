@@ -46,6 +46,6 @@ public class Grade {
                 values = change.getNewValue();
             }
         }
-        return values
+        return values;
     }
 }
