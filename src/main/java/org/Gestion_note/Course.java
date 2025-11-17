@@ -12,4 +12,20 @@ public class Course {
         this.credit = credit;
         this.teacher = teacher;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public int getCredit() {
+        return credit;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
 }

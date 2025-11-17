@@ -39,4 +39,13 @@ public class Grade {
         this.initialValue = newValue;
         this.historic.add(new GradeHistoric(oldValue,newValue,Instant.now(),motif));
     }
+    public double getValeurA(Instant instant) {
+        double values = 0.0;
+        for (GradeHistoric change : historic){
+            if (!change.getChangeDate().isAfter(instant)) {
+                values = change.getNewValue();
+            }
+        }
+        return values
+    }
 }
